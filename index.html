@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PapahZone — Platform Edukasi Keamanan Siber</title>
+<meta name="description" content="Katalog ribuan tools keamanan siber: recon, web, network, exploit, forensics, OSINT, mobile, cloud, dan puluhan kategori lainnya.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="edu-banner">⚠ EDUKASI HANYA UNTUK PEMBELAJARAN — TIDAK UNTUK DISALAHGUNAKAN ⚠</div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo"><span class="logo-mark">◈</span> Papah<span class="logo-accent">Zone</span></a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="tools.html">Tools</a>
+      <a href="tentang.html">Tentang</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="https://t.me/PapahZoneKan" target="_blank" class="btn-tg">✈ Telegram</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head">
+    <span class="logo"><span class="logo-mark">◈</span> Papah<span class="logo-accent">Zone</span></span>
+    <button class="close-btn" id="closeSidebar">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html" class="nav-item">Beranda</a>
+    <div class="nav-group">
+      <button class="nav-item group-toggle">Kategori Tools <span class="chev">▾</span></button>
+      <div class="group-menu" id="sidebarCategories">
+        <!-- diisi app.js -->
+      </div>
+    </div>
+    <a href="tools.html" class="nav-item">Semua Tools</a>
+    <a href="tentang.html" class="nav-item">Tentang Kami</a>
+    <a href="kontak.html" class="nav-item">Contact Us</a>
+  </nav>
+  <div class="sidebar-foot">
+    <a href="https://t.me/PapahZoneKan" target="_blank" class="tg-full">✈ @PapahZoneKan</a>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<main>
+  <section class="hero container">
+    <div class="hero-content">
+      <span class="pill">Platform Edukasi Keamanan Siber</span>
+      <h1>Ribuan Tools.<br><span class="gradient-text">Puluhan Kategori.</span><br>Satu Platform.</h1>
+      <p class="hero-desc">Jelajahi katalog tools keamanan siber paling lengkap — dari recon, web security, network, exploit, forensics, OSINT, mobile, cloud, hingga red team & blue team. Setiap tool dilengkapi <strong>link GitHub</strong> dan penjelasan cara kerjanya.</p>
+      <div class="hero-actions">
+        <a href="tools.html" class="btn btn-primary">Jelajahi Katalog →</a>
+        <a href="tentang.html" class="btn btn-outline">Tentang Kami</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="statTools">0</strong><span>Tools</span></div>
+        <div><strong id="statCats">0</strong><span>Kategori</span></div>
+        <div><strong>100%</strong><span>Edukasi</span></div>
+        <div><strong>24/7</strong><span>Komunitas</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Kategori <span class="gradient-text">Populer</span></h2><p>Pilih kategori sesuai minatmu.</p></div>
+    <div class="category-grid" id="homeCategories"></div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><h2>Kenapa <span class="gradient-text">PapahZone</span>?</h2></div>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="feature-icon">📚</div><h3>Katalog Terkurasi</h3><p>Ribuan tools dari repositori GitHub terpercaya, dikelompokkan dalam puluhan kategori.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔗</div><h3>Link GitHub Langsung</h3><p>Setiap tool terhubung ke repositori aslinya — transparan & mudah diverifikasi.</p></div>
+      <div class="feature-card"><div class="feature-icon">🧭</div><h3>Penjelasan Cara Kerja</h3><p>Bukan sekadar daftar. Kami jelaskan fungsi, platform, dan tingkat kesulitan.</p></div>
+      <div class="feature-card"><div class="feature-icon">🛡</div><h3>Fokus Etika</h3><p>Semua materi berorientasi pertahanan dan pembelajaran yang bertanggung jawab.</p></div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="warning-box">
+      <div class="warning-icon">⚠</div>
+      <div><h3>Peringatan Penting</h3><p>Seluruh tools dan materi di PapahZone disediakan <strong>HANYA untuk tujuan pembelajaran dan edukasi</strong>. Gunakan hanya pada sistem/lab milik Anda sendiri atau yang Anda punya izin tertulis.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="logo"><span class="logo-mark">◈</span> Papah<span class="logo-accent">Zone</span></div><p class="footer-desc">Platform edukasi keamanan siber untuk generasi digital Indonesia.</p><a href="https://t.me/PapahZoneKan" target="_blank" class="tg-link">✈ @PapahZoneKan</a></div>
+    <div><h4>Navigasi</h4><a href="index.html">Beranda</a><a href="tools.html">Tools</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a></div>
+    <div><h4>Kategori</h4><div id="footerCategories"></div></div>
+    <div><h4>Legal</h4><a href="tentang.html">Disclaimer</a><a href="tentang.html">Kebijakan Edukasi</a><a href="kontak.html">Lapor Konten</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2025 PapahZone — Edukasi Keamanan Siber</span><span class="edu-tag">EDUKASI ONLY</span></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

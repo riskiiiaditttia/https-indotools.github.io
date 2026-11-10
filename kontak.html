@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact Us — PapahZone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="edu-banner">
+  <span>⚠ EDUKASI HANYA UNTUK PEMBELAJARAN — TIDAK UNTUK DISALAHGUNAKAN ⚠</span>
+</div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo"><span class="logo-icon">◈</span> Papah<span class="logo-accent">Zone</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span class="logo"><span class="logo-icon">◈</span> Papah<span class="logo-accent">Zone</span></span>
+    <button class="close-btn" id="closeSidebar">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html" class="nav-item">BERANDA</a>
+    <div class="nav-dropdown">
+      <button class="nav-item dropdown-toggle">TOOLS <span class="chevron">▾</span></button>
+      <div class="dropdown-menu">
+        <a href="tools.html?cat=pentester">Pentester</a>
+        <a href="tools.html?cat=attacker">Attacker</a>
+        <a href="tools.html?cat=hacking">Hacking</a>
+        <a href="tools.html?cat=password">Password Attacker</a>
+        <a href="tools.html?cat=wifi">Wifi & WAF</a>
+        <a href="tools.html" class="all-tools">▸ Semua Tools</a>
+      </div>
+    </div>
+    <a href="tentang.html" class="nav-item">TENTANG KAMI</a>
+    <a href="kontak.html" class="nav-item">CONTACT US</a>
+  </nav>
+  <div class="sidebar-footer">
+    <a href="https://t.me/PapahZoneKan" target="_blank" class="tg-btn">✈ Telegram: @PapahZoneKan</a>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<section class="page-head">
+  <div class="container">
+    <h1>Contact <span class="grad">Us</span></h1>
+    <p>Ada pertanyaan, masukan, atau ingin kolaborasi? Hubungi kami.</p>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Mari Terhubung</h2>
+      <p>Kami terbuka untuk diskusi seputar keamanan siber, kolaborasi edukasi, atau pertanyaan seputar platform.</p>
+
+      <div class="contact-item">
+        <div class="ci-icon">✈</div>
+        <div>
+          <strong>Telegram</strong>
+          <a href="https://t.me/PapahZoneKan" target="_blank">t.me/PapahZoneKan</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">📧</div>
+        <div>
+          <strong>Email</strong>
+          <span>halo@papahzone.id</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">💬</div>
+        <div>
+          <strong>Komunitas</strong>
+          <a href="https://t.me/PapahZoneKan" target="_blank">Join Group Telegram</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-icon">⏰</div>
+        <div>
+          <strong>Jam Respons</strong>
+          <span>Senin–Minggu, 08.00–22.00 WIB</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan terkirim (demo). Hubungi kami lewat Telegram untuk respon cepat.'); this.reset();">
+      <h2>Kirim Pesan</h2>
+      <label>Nama Lengkap
+        <input type="text" required placeholder="Nama kamu">
+      </label>
+      <label>Email
+        <input type="email" required placeholder="email@contoh.com">
+      </label>
+      <label>Subjek
+        <input type="text" required placeholder="Subjek pesan">
+      </label>
+      <label>Pesan
+        <textarea required rows="5" placeholder="Tulis pesanmu di sini..."></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Kirim Pesan →</button>
+      <p class="form-note">⚠ Dilarang mengirim konten terkait aktivitas ilegal.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none">
+    <span>© 2025 PapahZone — Edukasi Keamanan Siber</span>
+    <span class="edu-tag">EDUKASI ONLY</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

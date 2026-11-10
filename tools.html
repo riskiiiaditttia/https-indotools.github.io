@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Tools — PapahZone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="edu-banner">⚠ EDUKASI HANYA UNTUK PEMBELAJARAN — TIDAK UNTUK DISALAHGUNAKAN ⚠</div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo"><span class="logo-mark">◈</span> Papah<span class="logo-accent">Zone</span></a>
+    <nav class="nav-links"><a href="index.html">Beranda</a><a href="tools.html" class="active">Tools</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a></nav>
+    <div class="nav-actions"><a href="https://t.me/PapahZoneKan" target="_blank" class="btn-tg">✈ Telegram</a><button class="hamburger" id="hamburger"><span></span><span></span><span></span></button></div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-head"><span class="logo"><span class="logo-mark">◈</span> Papah<span class="logo-accent">Zone</span></span><button class="close-btn" id="closeSidebar">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html" class="nav-item">Beranda</a>
+    <div class="nav-group"><button class="nav-item group-toggle open">Kategori Tools <span class="chev">▾</span></button><div class="group-menu" id="sidebarCategories"></div></div>
+    <a href="tools.html" class="nav-item active">Semua Tools</a>
+    <a href="tentang.html" class="nav-item">Tentang Kami</a>
+    <a href="kontak.html" class="nav-item">Contact Us</a>
+  </nav>
+  <div class="sidebar-foot"><a href="https://t.me/PapahZoneKan" target="_blank" class="tg-full">✈ @PapahZoneKan</a></div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<main class="container tools-main">
+  <div class="tools-header">
+    <h1>Katalog <span class="gradient-text">Tools</span></h1>
+    <p id="toolsCountLabel">Memuat data...</p>
+  </div>
+
+  <div class="tools-toolbar">
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Cari nama tool, deskripsi, atau kata kunci...">
+    </div>
+    <div class="cat-pills" id="categoryPills"></div>
+  </div>
+
+  <div class="tools-grid" id="toolsGrid"></div>
+  <div class="empty-state" id="emptyState" style="display:none"><div class="empty-icon">⌕</div><h3>Tidak ada tool ditemukan</h3><p>Coba ubah kata kunci atau kategori.</p></div>
+</main>
+
+<div class="modal-overlay" id="modalOverlay"></div>
+<div class="modal" id="toolModal"><button class="modal-close" id="modalClose">✕</button><div id="modalContent"></div></div>
+
+<footer class="footer">
+  <div class="container footer-bottom"><span>© 2025 PapahZone — Edukasi Keamanan Siber</span><span class="edu-tag">EDUKASI ONLY</span></div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
